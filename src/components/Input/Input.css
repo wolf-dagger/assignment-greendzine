@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  color: aliceblue;
+  margin: 0 1rem;
+  font-family: cursive;
+  font-size: 1.5rem;
+}
+
+input {
+  width: 30%;
+  padding: 10px 10px;
+  border-radius: 20px;
+  background-color: #ff671f;
+  color: rgb(0, 0, 0);
+}
+
+input::placeholder {
+  color: aliceblue;
+}
+
+input:focus {
+  background-color: aliceblue;
+  transition-duration: 0.5s;
+}
+
+@media (max-width: 800px) {
+  input {
+    width: 80%;
+  }
+}

@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  background-color: black;
+}
+.search_box {
+  padding: 1em;
+  margin: 2rem 2rem;
+  text-align: center;
+}
+
+.cardd {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem 12rem;
+}
+
+.card_container {
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 1rem;
+
+}
+.nodata{
+  text-align: center;
+
+}
+
+/* Media Query */
+
+@media (max-width: 800px) {
+  .cardd {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
